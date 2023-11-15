@@ -2,6 +2,32 @@
 .taskslist{
   padding: 65px 20px 100px;
   height: calc(100vh - 65px);
+
+  &__categories{
+    display: flex;
+    flex-direction : row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto 20px;
+  }
+
+  &__category{
+    font-family: "Heebo", sans-serif;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 30px;
+    background: transparent;
+    border: 2px solid rgb(153, 14, 14);
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    &.active{
+      background: rgb(153, 14, 14);
+    }
+  }
 }
 
 // Task

@@ -36,6 +36,13 @@ function Tasklist() {
 
   return (
     <div className="taskslist">
+
+      <div className="taskslist__categories">
+        <div className="taskslist__category active">All</div>
+        <div className="taskslist__category">Active</div>
+        <div className="taskslist__category">Completed</div>
+      </div>
+
       {items.map((item) => (
         <div className="task" key={item.id}>
           <div className="task__checkbox-label">
